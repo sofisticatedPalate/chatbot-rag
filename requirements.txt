@@ -1,0 +1,10 @@
+langchain
+langchain-community
+chromadb
+InstructorEmbedding
+transformers
+streamlit
+pyPDF
+python-dotenv
+langchain-huggingface
+langchain-chroma

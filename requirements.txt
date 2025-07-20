@@ -1,10 +1,13 @@
 langchain
 langchain-community
+langchain-chroma
+langchain-huggingface
+langchain-google-genai
 chromadb
 InstructorEmbedding
 transformers
 streamlit
 pyPDF
 python-dotenv
-langchain-huggingface
-langchain-chroma
+dotenv
+sentence-transformers

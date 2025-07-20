@@ -1,7 +1,7 @@
 import os
 from langchain_community.document_loaders import ObsidianLoader
-from langchain.text_splitter import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain.text_splitter import MarkdownHeaderTextSplitter
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 
 # --- Configuration ---
@@ -42,11 +42,6 @@ def ingest_documents():
         ("#####", "Header 5"),
         ("######", "Header 6"),
     ]
-
-    # Initialize a RecursiveCharacterTextSplitter as a fallback or for smaller chunks
-    # after header splitting if desired. For simplicity, we'll use MarkdownHeaderTextSplitter
-    # and then a general RecursiveCharacterTextSplitter if needed for very long sections.
-    # For most Obsidian notes, MarkdownHeaderTextSplitter is sufficient.
 
     # Process each document's page_content with MarkdownHeaderTextSplitter
     all_chunks = []

@@ -1,5 +1,5 @@
 # Python virtual environment
-venv/
+.venv/
 
 # Data and Database files
 chroma_db/
